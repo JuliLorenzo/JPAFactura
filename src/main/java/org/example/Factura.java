@@ -38,6 +38,6 @@ public class Factura implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "factura_id")
     @Builder.Default
-    private Set<DetalleFactura> facturas = new HashSet<>();
+    private Set<DetalleFactura> detalles = new HashSet<>();
 }
 
